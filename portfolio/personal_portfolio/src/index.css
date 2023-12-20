@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --color-white: #FFFFFF;
+  --color-gray: #545454;
+  --color-black: #0C0C0C;
+}
+* {
+  scroll-behavior: smooth;
+}
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+.background__gradient {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, rgba(40, 37, 54, 1) 0%, rgba(75, 125, 131, 1) 68%, rgba(19, 12, 96, 1) 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgba(40, 37, 54, 1) 0%, rgba(75, 125, 131, 1) 68%, rgba(19, 12, 96, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgba(40, 37, 54, 1) 0%, rgba(75, 125, 131, 1) 68%, rgba(19, 12, 96, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#130C60', endColorstr='#282536', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgba(40, 37, 54, 1) 0%, rgba(75, 125, 131, 1) 68%, rgba(19, 12, 96, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgba(40, 37, 54, 1) 0%, rgba(75, 125, 131, 1) 68%, rgba(19, 12, 96, 1) 100%);
+}
+
+.text__gradient {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, rgba(47, 40, 138, 1) 0%, rgba(36, 33, 74, 1) 50%, rgba(115, 54, 54, 1) 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, rgba(47, 40, 138, 1) 0%, rgba(36, 33, 74, 1) 50%, rgba(115, 54, 54, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, rgba(47, 40, 138, 1) 0%, rgba(36, 33, 74, 1) 50%, rgba(115, 54, 54, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#733636', endColorstr='#2F288A', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, rgba(47, 40, 138, 1) 0%, rgba(36, 33, 74, 1) 50%, rgba(115, 54, 54, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, rgba(47, 40, 138, 1) 0%, rgba(36, 33, 74, 1) 50%, rgba(115, 54, 54, 1) 100%);
+}
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}

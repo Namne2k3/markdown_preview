@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html , body{
+    background-color: rgb(81, 69, 67)   ;
+}
+ul {
+    padding-left: 0;
+}
+p {
+    margin: 0;
+}
+#board-num {
+    list-style-type: none;
+}
+#display {
+    display: flex;
+}
+#drum-machine {
+    margin: 20rem auto;
+    background-color: #b3b3b3;
+    border: 2px solid yellow;
+    max-width: 1000px;
+    width: 100%;
+    padding: 12px 32px 12px;
+    display: flex;  
+    flex-direction: column;
+}
+#logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+}
+#logo i {
+    margin-left: 4px;
+}
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+li {
+    padding: 0;
+}
+h5 {
+    margin: 0;
+}
+.active {
+    background-color: green;
+}
+.drum-pad {
+    background-color: gray;
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    width: calc(100% / 3);
+    box-shadow: black 3px 3px 5px;
+}
+.drum-pad:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.drum-pad:active {
+    background-color: orange;
+}
+.panel {
+    background-color: black;
+    width: 60px;
+    height: 25px;
+}
+.float-right {
+    float: right;
+    background-color: green!important;
+}
+.selected {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    border: 3px solid;
+    cursor: pointer;
+}
+#monitor {
+    display: flex;
+    background-color: gray;
+    width: 60%;
+    height: 40px;
+    margin-top: 16px;
+    text-align: center;
+    justify-content: center;
+}
+#monitor h5 {
+    line-height: 36px;
+}
+#progress-bar {
+    margin-top: 16px;
+}
+#bank-btn {
+    margin-top: 16px;
+}
